@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<section></section>
+<script src="./main.js"></script>
+<style>
+    body {
+        font-family: Roboto, sans-serif;
+    }
+
+    th[type]  {
+        background: lightgreen;
+    }
+
+    th[type="ASC"]:after {
+        content: ' ↑';
+    }
+
+    th[type="DESC"]:after {
+        content: ' ↓';
+    }
+
+    th {
+        user-select: none;
+        cursor: pointer;
+    }
+
+    td {
+        position: relative;
+        padding: 3px;
+    }
+
+    td > input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+</style>
+</body>
+</html>
